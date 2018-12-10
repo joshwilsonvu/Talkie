@@ -1,0 +1,10 @@
+{
+  "themeColor": "#3e305a",
+  "backgroundColor": "#d8c3ff",
+  "postColor": "#FFF",
+  "dimColor": "#CCC",
+  "rounding": "1rem",
+  "padding": "1rem",
+  "votesWidth": "2em",
+  "maxLength": 20
+}
