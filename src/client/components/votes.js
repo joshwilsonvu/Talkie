@@ -23,8 +23,10 @@ const VoteCount = styled.div`
 `;
 
 export const Votes = connect(
-  state => {
-    votes: state.post.posts[]
+  state, ownProps => {
+    return {
+      votes:
+    }
   }
 )(({onUpvote, onDownvote, votes, userDidVote} = {userDidVote: 0, votes: 0}) => (
   <VotesFlex>
