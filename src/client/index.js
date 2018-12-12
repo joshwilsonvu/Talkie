@@ -2,13 +2,14 @@
 
 import React from 'react';
 import {render} from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
 import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import {ThemeProvider} from 'styled-components';
 import {App} from './components/app';
-import {sessionReducer} from './reducers/session';
+import {sessionReducer} from './reducers/session.js';
 import {postReducer} from './reducers/post';
+import {sessionBegin} from './actions/session';
+import {postsReceive} from './actions/post';
 import {websocketsMiddleware} from './middleware/websockets';
 
 import theme from './theme';
@@ -21,13 +22,23 @@ const store = createStore(
   applyMiddleware(websocketsMiddleware)
 );
 
+if (window.__PRELOADED_STATE__) {
+  let username, posts;
+  if (username = window.__PRELOADED_STATE__.username) {
+    store.dispatch(sessionBegin(window.__PRELOADED_STATE__.username));
+  }
+  if (posts = window.__PRELOADED_STATE__.posts) {
+    store.dispatch(postsReceive(posts));
+  }
+}
+
+store.dispatch({type: 'SOCKET:INIT'});
+
 // Function to render the whole application
 render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
         <App/>
-      </BrowserRouter>
     </ThemeProvider>
   </Provider>,
   document.getElementById('root')

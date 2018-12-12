@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-import {Switch, Route, Link} from 'react-router-dom';
-import {connect} from 'react-redux';
 
 import styled from 'styled-components';
-import {Posts} from './posts';
-import {Login} from './session';
 import {Nav} from './nav';
+import {Main} from './main';
 
-import {postCreate} from '../actions/post';
 
 const AppPad = styled.div`
   margin: 0;
@@ -26,23 +22,11 @@ const AppCenter = styled.div`
   text-align: left;
 `;
 
-export const App = connect(
-  state => ({
-    posts: state.post.posts,
-    username: state.session.username
-  }),
-
-)(props => {
-  return (
-    <AppPad>
-      <AppCenter>
-        <Nav username={props.username}/>
-        <Switch>
-          <Route exact path="/" render={() => <Posts posts={props.posts}/>}/>
-          <Route path="/login" render={() => { console.log("login"); return <Login/>;}}/>
-        </Switch>
-
-      </AppCenter>
-    </AppPad>
-  );
-});
+export const App = props => (
+  <AppPad>
+    <AppCenter>
+      <Nav username={props.username}/>
+      <Main/>
+    </AppCenter>
+  </AppPad>
+);

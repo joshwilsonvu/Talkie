@@ -1,6 +1,7 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
+import {sessionEnd} from '../actions/session';
 
 const NavLeft = styled.div`
   flex: 1;
@@ -23,23 +24,43 @@ const NavBase = styled.header`
 const NavTitle = styled.h1`
   margin-bottom: 0;
 `;
+const NavUsername = styled.div`
+  font-weight: bold;
+`;
 const NavImg = styled.img`
   height: 5rem;
+  transition: transform 100ms linear;
+  :hover {
+    transform: scale(0.85);
+  }
 `;
 
-export const Nav = props => (
+export const Nav = connect(
+  state => ({
+    username: state.session.username
+  }),
+  dispatch => ({
+    logout: () => dispatch(sessionEnd())
+  })
+)(props => (
   <NavBase>
     <NavLeft>
       <NavTitle>{document.title}</NavTitle>
     </NavLeft>
     <NavCenter>
-      <NavImg src="/icon.png" />
+      <NavImg src="/icon.png"/>
     </NavCenter>
     <NavRight>
-      { !props.username
-        ? <><Link to="/login">Log In</Link><br/><Link to="/signup">Sign up</Link></>
-        : <Link to="/logout">Log Out</Link>
+      {
+        props.username
+          ? (
+            <>
+              <NavUsername>{props.username}</NavUsername>
+              <a onClick={props.logout}>Logout</a>
+            </>
+          )
+          : null
       }
     </NavRight>
   </NavBase>
-);
+));

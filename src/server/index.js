@@ -5,14 +5,12 @@ require('dotenv').config();
 
 // Imports
 const
-  path = require('path'),
   fs = require('fs'),
   http = require('http'),
   https = require('https'),
   SocketIo = require('socket.io'),
-  express = require('express');
-
-
+  express = require('express'),
+  initTables = require('./db/initTables');
 
 /**
  * Create either an HTTP or HTTPS server
@@ -52,15 +50,17 @@ function createServer(app) {
   return server;
 }
 
-function main() {
+async function main() {
   // Create the Express app, where all the routing happens
   const app = express();
   // Create the HTTP/HTTPS server
   const server = createServer(app);
   // Upgrade the server to be able to use websockets
   const io = SocketIo(server);
+  // Gain access to the database tables
+  const tables = await initTables();
   // Define how the Express app and SocketIO upgrade work
-  require("./routes")(app, io);
+  require("./routes")(app, io, tables);
 }
 
 main();

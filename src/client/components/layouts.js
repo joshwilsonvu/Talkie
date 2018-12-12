@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 
@@ -16,3 +17,21 @@ export const PostBody = styled.span`
   flex: 1;
   align-self: flex-center;
 `;
+
+const PostMediaFlex = styled.div`
+  display: flex;
+  align-self: flex-center;
+`;
+
+const PostMediaBase = styled.span`
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+`;
+
+export const PostMedia = props => (
+  <PostMediaFlex>
+    <PostMediaBase {...props}/>
+  </PostMediaFlex>
+);
+

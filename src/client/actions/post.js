@@ -1,17 +1,12 @@
 
 
-export const postCreate = (username, text) => ({
+export const postCreate = text => ({
   type: 'POST:CREATE',
-  username: username,
-  text: text,
-  id: id,
-  votes: votes,
-  userDidVote: userDidVote,
+  text: text
 });
 
-export const postVote = (username, id, vote = true) => ({
-  type: 'POST:VOTE',
-  username: username,
-  id: id,
-  vote: vote
+export const postsReceive = posts => ({
+  type: 'POSTS:RECEIVE',
+  posts: posts
 });
+

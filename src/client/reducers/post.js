@@ -6,7 +6,7 @@ const arrayImmutableInsertObj = (arr, ind, val) => {
   copy[ind] = val;
   return copy;
 };
-// Returns a new array with val shallowly merged with arr[ind]. Does not insert
+// Returns a new array with val shallowly merged with arr[ind].
 const arrayImmutableUpdateObj = (arr, ind, val) => (
   ind in arr
     ? (arr.map((e, i) => ind === i ? {...e, ...val} : e))
@@ -26,14 +26,21 @@ const initialState = {
 export const postReducer = (state = initialState, action) => {
   const {type, ...payload} = action;
   switch (type) {
-    case 'POST:CREATE':
+    case 'POST:RECEIVE':
       return Object.assign({}, state, {
-        posts: arrayImmutableInsert(state.posts, payload.id, payload)
+        posts: arrayImmutableInsertObj(state.posts, payload.id, payload)
       });
-    case 'POST:VOTE':
-      return Object.assign({}, state, {
-        posts: arrayImmutableUpdateObj(state.posts, payload.id, {votes: payload.votes})
-      });
+    case 'POSTS:RECEIVE':
+      const idIndexed = [];
+      if (payload.posts) {
+        payload.posts.forEach(post => idIndexed[post.id] = post);
+        console.log(idIndexed);
+        return Object.assign({}, state, {
+          posts: Object.assign([], state.posts, idIndexed)
+        });
+      } else {
+        return state;
+      }
     default:
       return state;
   }
