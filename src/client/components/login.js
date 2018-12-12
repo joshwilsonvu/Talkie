@@ -34,19 +34,23 @@ class LoginBase extends Component {
       }}>
         <PostBase>
           <PostBody>
+            <div>
             <NoWrap>
               <label htmlFor="username">Username:&nbsp;</label>
               <Input id="username" name="username" type="text" required maxLength={32} pattern="^[0-9a-zA-Z]+$"
                      value={this.state.username}
                      onChange={event => this.setState({username: event.target.value})}/>
             </NoWrap>
-            <br/>
+            </div>
+            <div>
             <NoWrap>
               <label htmlFor="password">Password:&nbsp;</label>
               <Input id="password" name="password" type="password" required minLength={6} maxLength={32}
                      value={this.state.password}
                      onChange={event => this.setState({password: event.target.value})}/>
             </NoWrap>
+            </div>
+            <div>
             {
               !this.props.error ? null : (
                 <NoWrap>
@@ -54,6 +58,7 @@ class LoginBase extends Component {
                 </NoWrap>
               )
             }
+            </div>
           </PostBody>
           <PostMedia>
             <Confirm confirmProps={{type: 'submit'}}/>

@@ -13,7 +13,6 @@ const incomingMessages = [
 
 export const websocketsMiddleware = store => next => action => {
   const {type, ...payload} = action;
-  console.log(`Dispatching ${type} with payload ${JSON.stringify(payload)}`);
   if (type === 'SOCKET:INIT') {
     // Setup the socket callbacks
     incomingMessages.forEach(type => {

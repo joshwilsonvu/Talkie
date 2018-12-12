@@ -34,7 +34,6 @@ export const postReducer = (state = initialState, action) => {
       const idIndexed = [];
       if (payload.posts) {
         payload.posts.forEach(post => idIndexed[post.id] = post);
-        console.log(idIndexed);
         return Object.assign({}, state, {
           posts: Object.assign([], state.posts, idIndexed)
         });

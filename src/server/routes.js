@@ -72,7 +72,6 @@ const postEvents = (io, socket, tables) => {
   socket.on("POSTS:REQUEST", async ({beginID}) => {
     beginID = Number(beginID) || undefined;
     const payload = await recentPosts(tables.Post, 100, beginID);
-    console.log(payload);
     socket.emit("POSTS:RECEIVE", { posts: payload })
   });
 };
@@ -108,6 +107,6 @@ module.exports = (app, io, tables) => {
   app.use(expressSession); // add session property to req
   io.use(sharedSession(expressSession, { autoSave: false })); // use same session property for io
 
-  routes(app);
+  routes(app, tables);
   events(io, tables);
 };

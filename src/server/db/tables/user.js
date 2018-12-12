@@ -21,7 +21,6 @@ module.exports = sequelize => {
     return await bcrypt.hash(password, salt);
   };
   User.prototype.comparePassword = async function(password) {
-    console.log(`Comparing plaintext ${password} to hash ${this.hash}`);
     return await bcrypt.compare(password, this.hash);
   };
 
