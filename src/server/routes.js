@@ -35,7 +35,6 @@ const events = (io, tables) => {
 
 /******** SESSION ********/
 const sessionEvents = (socket, tables) => {
-
   socket.on('SESSION:BEGIN', async ({username, password}) => {
     const currentUsername = socket.handshake.session.username;
     if (currentUsername) {
@@ -53,6 +52,8 @@ const sessionEvents = (socket, tables) => {
         socket.handshake.session.save();
         socket.emit('SESSION:LOGIN', {username: username});
       } else {
+        // rate-limiting - delay before sending error
+        await (new Promise(resolve => setTimeout(resolve(), process.env.WRONG_PASS_DELAY || 1000)));
         socket.emit('SESSION:ERROR');
       }
     }

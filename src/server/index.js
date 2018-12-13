@@ -22,7 +22,9 @@ function createServer(app) {
   if (process.env.NODE_ENV === 'production') {
     // Create an HTTP server that redirects to HTTPS
     const httpServer = http.createServer((req, res) => {
-      res.writeHead(302, {Location: `https://${req.headers.host}${req.url}`}).end();
+      res.setHeader('Location', `https://${req.headers.host}${req.url}`);
+      res.statusCode = 302;
+      res.end();
     });
     // Create an HTTPS server that serves the Express app
     server = https.createServer(
@@ -35,15 +37,27 @@ function createServer(app) {
 
     // Listen on servers
     server
-      .listen(process.env.HTTPS_PORT || 443, () => {
+      .listen(process.env.HTTPS_PORT || 443, err => {
+        if (err) {
+          console.error(err);
+          process.exit(1);
+        }
         console.log(`Talkie secure listening on: ${server.address().port}`);
       });
     httpServer
-      .listen(process.env.PORT || 80, () => {
+      .listen(process.env.PORT || 80, err => {
+        if (err) {
+          console.error(err);
+          process.exit(1);
+        }
         console.log(`Talkie listening on ${httpServer.address().port} for HTTPS redirect`);
       });
   } else {
-    server = app.listen(process.env.PORT || 8080, () => {
+    server = app.listen(process.env.PORT || 8080, err => {
+      if (err) {
+        console.error(err);
+        process.exit(1);
+      }
       console.log(`Talkie development listening on ${server.address().port}`);
     });
   }
