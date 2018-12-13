@@ -53,7 +53,7 @@ class LoginBase extends Component {
             <div>
               <NoWrap>
                 {
-                  !this.props.error
+                  this.props.error
                     ? 'That username and password combination isn\'t on file — try again.'
                     : 'Login with an existing username and password, or sign up for a new account.'
                 }
