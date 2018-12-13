@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b557c651-34ba-4d45-82da-547cd0dc8068" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/server/db/queryUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/queryUsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/login.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +33,7 @@
           <entry key="gitignore" value="2" />
           <entry key="html" value="9" />
           <entry key="ico" value="3" />
-          <entry key="js" value="922" />
+          <entry key="js" value="925" />
           <entry key="json" value="39" />
           <entry key="png" value="15" />
           <entry key="pug" value="25" />
@@ -46,7 +46,7 @@
           <entry key="Image" value="18" />
           <entry key="JSON" value="38" />
           <entry key="Jade" value="25" />
-          <entry key="JavaScript" value="922" />
+          <entry key="JavaScript" value="925" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="tsconfig" value="2" />
         </counts>
@@ -55,7 +55,7 @@
         <counts>
           <entry key="env" value="650" />
           <entry key="html" value="9" />
-          <entry key="js" value="32646" />
+          <entry key="js" value="32666" />
           <entry key="json" value="461" />
           <entry key="pug" value="234" />
         </counts>
@@ -66,7 +66,7 @@
           <entry key="HTML" value="9" />
           <entry key="JSON" value="461" />
           <entry key="Jade" value="234" />
-          <entry key="JavaScript" value="32646" />
+          <entry key="JavaScript" value="32666" />
         </counts>
       </usages-collector>
     </session>
@@ -74,10 +74,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/server/db/queryPosts.js">
+        <entry file="file://$PROJECT_DIR$/src/client/components/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+            <state relative-caret-position="323">
+              <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,9 +197,9 @@
         <option value="$PROJECT_DIR$/src/server/index.js" />
         <option value="$PROJECT_DIR$/src/client/reducers/session.js" />
         <option value="$PROJECT_DIR$/src/client/reducers/post.js" />
-        <option value="$PROJECT_DIR$/src/client/components/login.js" />
-        <option value="$PROJECT_DIR$/src/server/db/queryUsers.js" />
         <option value="$PROJECT_DIR$/src/server/db/queryPosts.js" />
+        <option value="$PROJECT_DIR$/src/server/db/queryUsers.js" />
+        <option value="$PROJECT_DIR$/src/client/components/login.js" />
       </list>
     </option>
   </component>
@@ -248,6 +251,19 @@
               <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
               <item name="talkie" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="talkie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="talkie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
@@ -399,7 +415,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123947000" />
+    <option name="totallyTimeSpent" value="124509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -693,23 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/db/tables/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -724,17 +723,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/db/queryUsers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/db/queryPosts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/db/queryUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

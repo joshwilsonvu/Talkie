@@ -51,13 +51,11 @@ class LoginBase extends Component {
               </NoWrap>
             </div>
             <div>
-              <NoWrap>
-                {
-                  this.props.error
-                    ? 'That username and password combination isn\'t on file — try again.'
-                    : 'Login with an existing username and password, or sign up for a new account.'
-                }
-              </NoWrap>
+              {
+                this.props.error
+                  ? 'That username and password combination isn\'t on file — try again.'
+                  : 'Login with an existing username and password, or sign up for a new account.'
+              }
             </div>
           </PostBody>
           <PostMedia>
