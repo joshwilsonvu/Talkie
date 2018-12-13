@@ -31,7 +31,8 @@ function createServer(app) {
       {
         key: fs.readFileSync(process.env.HTTPS_KEY_PATH),
         cert: fs.readFileSync(process.env.HTTPS_CERT_PATH),
-        ca: fs.readFileSync(process.env.HTTPS_CA_PATH)
+        ca: fs.readFileSync(process.env.HTTPS_CA_PATH),
+        requestCert: process.env.REQUEST_CERT === 'true',
       },
       app);
 

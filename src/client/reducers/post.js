@@ -26,6 +26,8 @@ const initialState = {
 export const postReducer = (state = initialState, action) => {
   const {type, ...payload} = action;
   switch (type) {
+    case 'POST:ERROR':
+      return state;
     case 'POST:RECEIVE':
       return Object.assign({}, state, {
         posts: arrayImmutableInsertObj(state.posts, payload.id, payload)

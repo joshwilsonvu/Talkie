@@ -18,7 +18,7 @@ module.exports = {
     return filterPost(post);
   },
 
-  recentPosts: async (Post, limit, beginID) => {
+  recentPosts: async (Post, limit, beginID = undefined, offset = undefined) => {
     const query = {
       order: [
         ['id', 'DESC']
@@ -31,6 +31,9 @@ module.exports = {
           [Sequelize.Op.gte]: beginID
         }
       };
+    }
+    if (offset !== undefined) {
+      query.offset = offset;
     }
     const posts = await Post.findAll(query);
     return posts.map(filterPost);
