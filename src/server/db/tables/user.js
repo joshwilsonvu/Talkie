@@ -17,10 +17,10 @@ module.exports = sequelize => {
     });
   User.encryptPassword = async password => {
     // time to salt & hash or compare increases by a factor of 2 with every increase of 1
-    const salt = await bcrypt.genSalt(parseInt(process.env.bcryptCostFactor) || 10);
+    const salt = await bcrypt.genSalt(parseInt(process.env.BCRYPT_COST_FACTOR) || 10);
     return await bcrypt.hash(password, salt);
   };
-  User.prototype.comparePassword = async function(password) {
+  User.prototype.comparePassword = async function (password) {
     return await bcrypt.compare(password, this.hash);
   };
 

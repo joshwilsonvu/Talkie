@@ -1,4 +1,3 @@
-/* Copyright G. Hemingway, 2018 - All rights reserved */
 'use strict';
 
 let path = require('path'),
@@ -7,7 +6,6 @@ let path = require('path'),
 module.exports = {
   context: path.join(__dirname, '/src/client'),
   entry: './index.js',
-  mode: 'development',
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'public/js')
@@ -36,5 +34,6 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [],
+  stats: "minimal"
 };

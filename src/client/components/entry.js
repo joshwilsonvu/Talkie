@@ -9,10 +9,11 @@ import {validatePost} from '../../shared/index';
 const TextArea = styled.textarea`
   min-height: 3rem;
   width: 100%;
-  margin: 0.5rem;
+  margin: 0 0.5rem 0 0;
   border: hidden;
   outline: none;
   font-family: inherit;
+  font-size: inherit;
   background-color: ${props => props.theme.postColor};
   resize: vertical;
 `;

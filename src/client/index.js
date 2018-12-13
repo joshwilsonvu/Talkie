@@ -22,6 +22,8 @@ const store = createStore(
   applyMiddleware(websocketsMiddleware)
 );
 
+store.dispatch({type: 'SOCKET:INIT'});
+
 if (window.__PRELOADED_STATE__) {
   let username, posts;
   if (username = window.__PRELOADED_STATE__.username) {
@@ -32,13 +34,11 @@ if (window.__PRELOADED_STATE__) {
   }
 }
 
-store.dispatch({type: 'SOCKET:INIT'});
-
 // Function to render the whole application
 render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
-        <App/>
+      <App/>
     </ThemeProvider>
   </Provider>,
   document.getElementById('root')

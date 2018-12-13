@@ -27,23 +27,23 @@ function createServer(app) {
     // Create an HTTPS server that serves the Express app
     server = https.createServer(
       {
-        key: fs.readFileSync(process.env.httpsKeyPath),
-        cert: fs.readFileSync(process.env.httpsCertPath),
-        ca: fs.readFileSync(process.env.httpsCaPath)
+        key: fs.readFileSync(process.env.HTTPS_KEY_PATH),
+        cert: fs.readFileSync(process.env.HTTPS_CERT_PATH),
+        ca: fs.readFileSync(process.env.HTTPS_CA_PATH)
       },
       app);
 
     // Listen on servers
     server
-      .listen(process.env.httpsPort || 443, () => {
+      .listen(process.env.HTTPS_PORT || 443, () => {
         console.log(`Talkie secure listening on: ${server.address().port}`);
       });
     httpServer
-      .listen(process.env.httpPort || 80, () => {
+      .listen(process.env.PORT || 80, () => {
         console.log(`Talkie listening on ${httpServer.address().port} for HTTPS redirect`);
       });
   } else {
-    server = app.listen(process.env.httpPort || 8080, () => {
+    server = app.listen(process.env.PORT || 8080, () => {
       console.log(`Talkie development listening on ${server.address().port}`);
     });
   }
@@ -60,7 +60,7 @@ async function main() {
   // Gain access to the database tables
   const tables = await initTables();
   // Define how the Express app and SocketIO upgrade work
-  require("./routes")(app, io, tables);
+  require('./routes')(app, io, tables);
 }
 
 main();

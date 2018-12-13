@@ -1,5 +1,3 @@
-
-
 export const sessionBegin = (username, password) => ({
   type: 'SESSION:BEGIN',
   username: username,

@@ -1,5 +1,3 @@
-
-
 export const postCreate = text => ({
   type: 'POST:CREATE',
   text: text

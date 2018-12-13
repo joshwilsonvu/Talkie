@@ -30,7 +30,7 @@ module.exports = {
         id: {
           [Sequelize.Op.gte]: beginID
         }
-      }
+      };
     }
     const posts = await Post.findAll(query);
     return posts.map(filterPost);

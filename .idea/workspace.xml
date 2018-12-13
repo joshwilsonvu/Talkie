@@ -2,13 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b557c651-34ba-4d45-82da-547cd0dc8068" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.prod.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/icon-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/actions/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/actions/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/actions/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/actions/session.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/entry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/components/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/middleware/websockets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/middleware/websockets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/reducers/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/reducers/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/reducers/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/reducers/session.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/initTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/initTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/queryPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/queryPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/tables/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/tables/post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/db/tables/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/tables/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/template/base.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/template/base.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.common.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,44 +59,44 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="babelrc" value="1" />
-          <entry key="env" value="28" />
+          <entry key="env" value="36" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="9" />
           <entry key="ico" value="3" />
-          <entry key="js" value="835" />
-          <entry key="json" value="32" />
-          <entry key="png" value="14" />
-          <entry key="pug" value="23" />
+          <entry key="js" value="891" />
+          <entry key="json" value="38" />
+          <entry key="png" value="15" />
+          <entry key="pug" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key=".env file" value="28" />
+          <entry key=".env file" value="36" />
           <entry key="HTML" value="9" />
-          <entry key="Image" value="17" />
-          <entry key="JSON" value="31" />
-          <entry key="Jade" value="23" />
-          <entry key="JavaScript" value="835" />
+          <entry key="Image" value="18" />
+          <entry key="JSON" value="37" />
+          <entry key="Jade" value="25" />
+          <entry key="JavaScript" value="891" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="395" />
+          <entry key="env" value="624" />
           <entry key="html" value="9" />
-          <entry key="js" value="31260" />
-          <entry key="json" value="395" />
-          <entry key="pug" value="230" />
+          <entry key="js" value="31936" />
+          <entry key="json" value="461" />
+          <entry key="pug" value="234" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="395" />
+          <entry key=".env file" value="624" />
           <entry key="HTML" value="9" />
-          <entry key="JSON" value="395" />
-          <entry key="Jade" value="230" />
-          <entry key="JavaScript" value="31260" />
+          <entry key="JSON" value="461" />
+          <entry key="Jade" value="234" />
+          <entry key="JavaScript" value="31936" />
         </counts>
       </usages-collector>
     </session>
@@ -80,13 +104,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/client/components/entry.js">
+        <entry file="file://$PROJECT_DIR$/src/server/db/initTables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -102,20 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1em</find>
-      <find>'</find>
-      <find>em;</find>
-      <find>.posts</find>
-      <find>date</find>
-      <find>userVote</find>
-      <find>vote</find>
-      <find>dispatch</find>
-      <find>router</find>
-      <find>connect</find>
-      <find>Link</find>
-      <find>postmedia</find>
-      <find>users</find>
-      <find>SESSION:LOGIN</find>
       <find>handshake</find>
       <find>validate</find>
       <find>session</find>
@@ -125,12 +132,45 @@
       <find>__INITIAL_STATE__</find>
       <find>PRELOADED_STATE</find>
       <find>console.log</find>
+      <find>redisHost</find>
+      <find>.url</find>
+      <find>url</find>
+      <find>redis</find>
+      <find>api_version</find>
+      <find>httpsKeyPath</find>
+      <find>HTTPS_KEY_PATH</find>
+      <find>httpsCertPath</find>
+      <find>httpsCaPath</find>
+      <find>requestCert</find>
+      <find>rejectUnauthorized</find>
+      <find>sqlUri</find>
+      <find>sqlLog</find>
+      <find>bcryptCostFactor</find>
+      <find>process.env.</find>
+      <find>beginI</find>
+      <find>recent</find>
+      <find>force:</find>
+      <find>f</find>
+      <find>SQL_LOG</find>
+      <find>SQL_DROP</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
       <replace>rem;</replace>
       <replace>userDidVote</replace>
+      <replace>HTTPS_KEY_PATH</replace>
+      <replace>HTTPS_CERT_PATH</replace>
+      <replace>HTTPS_CA_PATH</replace>
+      <replace>REQUEST_CERT</replace>
+      <replace>REJECT_UNAUTHORIZED</replace>
+      <replace>SQL_URI</replace>
+      <replace>SQL_LOG</replace>
+      <replace>BCRYPT_COST_FACTOR</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/public</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,13 +185,10 @@
         <option value="$PROJECT_DIR$/src/server/io.js" />
         <option value="$PROJECT_DIR$/src/server/template/index.html" />
         <option value="$PROJECT_DIR$/src/server/template/manifest.json" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/client/reducers/username.js" />
         <option value="$PROJECT_DIR$/src/client/theme.json.js" />
         <option value="$PROJECT_DIR$/src/client/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/server/models.js" />
-        <option value="$PROJECT_DIR$/src/server/template/base.pug" />
         <option value="$PROJECT_DIR$/src/client/components/votes.js" />
         <option value="$PROJECT_DIR$/src/client/actions/session.js" />
         <option value="$PROJECT_DIR$/src/client/components/buttons.js" />
@@ -166,9 +203,6 @@
         <option value="$PROJECT_DIR$/src/shared/index.js" />
         <option value="$PROJECT_DIR$/src/server/db/tables/post.js" />
         <option value="$PROJECT_DIR$/src/client/reducers/session.js" />
-        <option value="$PROJECT_DIR$/src/server/db/initTables.js" />
-        <option value="$PROJECT_DIR$/src/client/components/nav.js" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/server/db/queryUsers.js" />
         <option value="$PROJECT_DIR$/src/client/reducers/post.js" />
         <option value="$PROJECT_DIR$/src/client/components/posts.js" />
@@ -176,13 +210,23 @@
         <option value="$PROJECT_DIR$/src/client/components/post.js" />
         <option value="$PROJECT_DIR$/src/server/db/queryPosts.js" />
         <option value="$PROJECT_DIR$/src/client/actions/post.js" />
-        <option value="$PROJECT_DIR$/src/client/index.js" />
-        <option value="$PROJECT_DIR$/src/client/middleware/websockets.js" />
-        <option value="$PROJECT_DIR$/src/server/index.js" />
-        <option value="$PROJECT_DIR$/src/server/routes.js" />
         <option value="$PROJECT_DIR$/src/client/components/login.js" />
         <option value="$PROJECT_DIR$/src/server/db/tables/user.js" />
+        <option value="$PROJECT_DIR$/src/server/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/client/components/entry.js" />
+        <option value="$PROJECT_DIR$/src/client/index.js" />
+        <option value="$PROJECT_DIR$/src/client/middleware/websockets.js" />
+        <option value="$PROJECT_DIR$/src/server/routes.js" />
+        <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/src/server/template/base.pug" />
+        <option value="$PROJECT_DIR$/src/client/components/nav.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/webpack.dev.js" />
+        <option value="$PROJECT_DIR$/webpack.prod.js" />
+        <option value="$PROJECT_DIR$/webpack.common.js" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/src/server/db/initTables.js" />
       </list>
     </option>
   </component>
@@ -227,75 +271,8 @@
             <path>
               <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
               <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="tables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,15 +291,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/server/template" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/src/server" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/server/template" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,6 +317,16 @@
   </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="initTables.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/server/db/initTables.js" working-dir="$PROJECT_DIR$/src/server/db">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
@@ -361,16 +349,6 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="pkg" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="pkg" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -382,19 +360,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.pkg" />
       <item itemvalue="npm.nexe" />
       <item itemvalue="npm.start" />
       <item itemvalue="npm.dev" />
       <item itemvalue="Node.js.initTables.js" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Node.js.initTables.js" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.nexe" />
-        <item itemvalue="npm.pkg" />
       </list>
     </recent_temporary>
   </component>
@@ -414,12 +392,12 @@
       <workItem from="1544152322664" duration="59032000" />
       <workItem from="1544483042795" duration="7247000" />
       <workItem from="1544544465274" duration="27992000" />
-      <workItem from="1544641933201" duration="8891000" />
+      <workItem from="1544641933201" duration="16316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110971000" />
+    <option name="totallyTimeSpent" value="118396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -434,7 +412,7 @@
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32876712" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.56438357" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -493,39 +471,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server/template/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2332" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/template/index.html" />
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/index.html" />
     <entry file="file://$PROJECT_DIR$/src/server/io.js" />
-    <entry file="file://$PROJECT_DIR$/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/favicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/reducers/index.js" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/components/votes.js" />
     <entry file="file://$PROJECT_DIR$/src/client/components/layouts.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -552,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/actions/session.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/shared/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -566,37 +508,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/db/queryUsers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/components/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -620,13 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/db/initTables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server/db/tables/post.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -638,23 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/template/base.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-          <folding>
-            <element signature="e#15#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,27 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/client/middleware/websockets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="108" column="30" lean-forward="true" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/theme.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -717,10 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/icon.png">
+    <entry file="file://$PROJECT_DIR$/public/img/icon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/icon-light.png">
+    <entry file="file://$PROJECT_DIR$/public/img/icon-light.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/components/post.js">
@@ -750,13 +620,140 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <element signature="e#15#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/middleware/websockets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/components/entry.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        <state relative-caret-position="218">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/favicon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/template/base.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.prod.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/actions/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/vendor.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="814" lean-forward="true" selection-start-column="814" selection-end-column="814" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/db/initTables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>

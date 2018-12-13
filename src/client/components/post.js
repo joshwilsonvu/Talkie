@@ -5,7 +5,7 @@ import {PostBase, PostBody} from './layouts';
 
 export const Username = styled.span`
   font-weight: bold;
-  text-decoration: ${props => props.own ? "underline" : "none"};
+  text-decoration: ${props => props.own ? 'underline' : 'none'};
 `;
 
 export const PostText = styled.div`

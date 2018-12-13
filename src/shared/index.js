@@ -1,5 +1,3 @@
-
-
 const textLimit = 140;
 
 const validate = (input, rules) => {
@@ -10,8 +8,8 @@ const validate = (input, rules) => {
 
 export const validatePost = text => {
   return validate(text, [
-    { test: x => x.length > 0, msg: "Your post should have some content."},
-    { test: x => x.length <= textLimit, msg: `Your post shouldn't be longer than ${textLimit} characters.`}
+    {test: x => x.length > 0, msg: 'Your post should have some content.'},
+    {test: x => x.length <= textLimit, msg: `Your post shouldn't be longer than ${textLimit} characters.`}
   ]);
 };
 

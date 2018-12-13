@@ -24,7 +24,7 @@ export const websocketsMiddleware = store => next => action => {
     socket.emit('POST:CREATE', {text: payload.text});
   } else if (type === 'POSTS:REQUEST') {
     // length will be one higher than the highest index (id) or 0
-    socket.emit('POSTS:REQUEST', {beginIO: store.getState().post.posts.length});
+    socket.emit('POSTS:REQUEST', {beginID: store.getState().post.posts.length});
   } else if (type === 'SESSION:BEGIN') {
     socket.emit('SESSION:BEGIN', {username: payload.username, password: payload.password});
   } else if (type === 'SESSION:END') {
