@@ -12,13 +12,11 @@ module.exports = {
     } else {
       // If the username is unused, create a user with the given password
       authenticated = true;
-      await User.encryptPassword(password)
-        .then(hash => {
-          User.create({
-            username: username,
-            hash: hash
-          });
-        });
+      const hash = await User.encryptPassword(password);
+      await User.create({
+        username: username,
+        hash: hash
+      });
     }
     return authenticated;
   }
