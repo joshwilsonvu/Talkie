@@ -1,17 +1,19 @@
-const
-  path = require('path'),
-  express = require('express'),
-  bodyParser = require('body-parser'),
-  logger = require('morgan'),
-  pug = require('pug'),
-  session = require('express-session'),
-  sharedSession = require('express-socket.io-session'),
-  redis = require('redis'),
-  RedisStore = require('connect-redis')(session),
-  SocketIo = require('socket.io');
+import path from 'path';
+import express from 'express';
+import bodyParser from 'body-parser';
+import logger from 'morgan';
+import pug from 'pug';
+import session from 'express-session';
+import sharedSession from 'express-socket.io-session';
+import redis from 'redis';
+import connectRedis from 'connect-redis';
+import SocketIo from 'socket.io';
 
-const {createPost, recentPosts} = require('./db/queryPosts');
-const {authenticateUser} = require('./db/queryUsers');
+import {createPost, recentPosts} from './db/queryPosts.js';
+import {authenticateUser} from './db/queryUsers';
+
+
+const RedisStore = connectRedis(session);
 
 const routes = (app, tables) => {
   app.get('*', async (req, res) => {
@@ -89,10 +91,10 @@ const postEvents = (io, socket, tables) => {
  * @param io { SocketIo.Server }
  * @param tables { object } the SQL tables
  */
-module.exports = (app, io, tables) => {
+export default (app, io, tables) => {
   // Add all of the routes to the Express app
   if (process.env.NODE_ENV !== 'production') {
-    app.use(logger('dev'));
+    app.use(logger('tiny'));
   }
   app.engine('pug', pug.__express);
   app.set('views', path.join(__dirname, 'template'));

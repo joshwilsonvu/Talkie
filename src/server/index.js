@@ -1,16 +1,23 @@
 'use strict';
 
-// Configuration
-require('dotenv').config();
-
 // Imports
-const
-  fs = require('fs'),
-  http = require('http'),
-  https = require('https'),
-  SocketIo = require('socket.io'),
-  express = require('express'),
-  initTables = require('./db/initTables');
+import envalid from 'envalid';
+process.env = envalid.cleanEnv(process.env, {
+  PORT: envalid.port({default: 8080}),
+  TITLE: envalid.str({default: "Talkie"}),
+  RECENT: envalid.num({default: 30}),
+  WRONG_PASS_DELAY: envalid.num({default: 1000}),
+  SESSION_SECRET: envalid.str({devDefault: 'sUpErSeCrEt'}),
+  SQL_URI: envalid.url(),
+  REDIS_URI: envalid.url({default: 'redis://localhost'}),
+  BCRYPT_COST_FACTOR: envalid.num({devDefault: 6, default: 12})
+});
+
+import http from 'http';
+import SocketIo from 'socket.io'
+import express from 'express';
+import initTables from './db/initTables';
+import routes from './routes';
 
 /**
  * Create either an HTTP or HTTPS server
@@ -18,50 +25,14 @@ const
  * @return {http.Server|express.Server}
  */
 function createServer(app) {
-  let server;
-  if (process.env.NODE_ENV === 'production') {
-    // Create an HTTP server that redirects to HTTPS
-    const httpServer = http.createServer((req, res) => {
-      res.setHeader('Location', `https://${req.headers.host}${req.url}`);
-      res.statusCode = 302;
-      res.end();
-    });
-    // Create an HTTPS server that serves the Express app
-    server = https.createServer(
-      {
-        key: fs.readFileSync(process.env.HTTPS_KEY_PATH),
-        cert: fs.readFileSync(process.env.HTTPS_CERT_PATH),
-        ca: fs.readFileSync(process.env.HTTPS_CA_PATH),
-        requestCert: process.env.REQUEST_CERT === 'true',
-      },
-      app);
-
-    // Listen on servers
-    server
-      .listen(process.env.HTTPS_PORT || 443, err => {
-        if (err) {
-          console.error(err);
-          process.exit(1);
-        }
-        console.log(`Talkie secure listening on: ${server.address().port}`);
-      });
-    httpServer
-      .listen(process.env.PORT || 80, err => {
-        if (err) {
-          console.error(err);
-          process.exit(1);
-        }
-        console.log(`Talkie listening on ${httpServer.address().port} for HTTPS redirect`);
-      });
-  } else {
-    server = app.listen(process.env.PORT || 8080, err => {
-      if (err) {
-        console.error(err);
-        process.exit(1);
-      }
-      console.log(`Talkie development listening on ${server.address().port}`);
-    });
-  }
+  // Listen on server
+  let server = app.listen(process.env.PORT || 8080, err => {
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
+    console.log(`Talkie listening on ${server.address().port}`);
+  });
   return server;
 }
 
@@ -75,7 +46,7 @@ async function main() {
   // Gain access to the database tables
   const tables = await initTables();
   // Define how the Express app and SocketIO upgrade work
-  require('./routes')(app, io, tables);
+  routes(app, io, tables);
 }
 
 main();
