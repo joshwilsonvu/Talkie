@@ -48,7 +48,7 @@ export const Nav = connect(
       <NavTitle>{document.title}</NavTitle>
     </NavLeft>
     <NavCenter>
-      <NavImg src="/img/icon.png"/>
+      <NavImg src="../../img/icon.png"/>
     </NavCenter>
     <NavRight>
       {
