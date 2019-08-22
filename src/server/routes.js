@@ -1,4 +1,6 @@
 import path from 'path';
+import url from 'url';
+const {URL, fileURLToPath} = url;
 import express from 'express';
 import bodyParser from 'body-parser';
 import logger from 'morgan';
@@ -94,13 +96,15 @@ const postEvents = (io, socket, tables) => {
 export default (app, io, tables) => {
   // Add all of the routes to the Express app
   if (process.env.NODE_ENV !== 'production') {
-    app.use(logger('tiny'));
+    app.use(logger('dev'));
   }
   app.engine('pug', pug.__express);
-  app.set('views', path.join(__dirname, 'template'));
-  app.use(express.static(path.join(__dirname, '../../public')));
+  app.set('views', fileURLToPath(new URL('template', import.meta.url)));
   app.use(express.json());
   app.use(bodyParser.urlencoded({extended: true}));
+  app.use(express.static(fileURLToPath(new URL('../../public', import.meta.url))));
+  console.log(`Serving public from path ${fileURLToPath(new URL('../../public', import.meta.url))}`);
+
   const expressSession = session({
     name: 'session',
     store: new RedisStore({
