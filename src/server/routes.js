@@ -102,8 +102,7 @@ export default (app, io, tables) => {
   app.set('views', fileURLToPath(new URL('template', import.meta.url)));
   app.use(express.json());
   app.use(bodyParser.urlencoded({extended: true}));
-  app.use(express.static(fileURLToPath(new URL('../../public', import.meta.url))));
-  console.log(`Serving public from path ${fileURLToPath(new URL('../../public', import.meta.url))}`);
+  app.use(express.static('public'));
 
   const expressSession = session({
     name: 'session',

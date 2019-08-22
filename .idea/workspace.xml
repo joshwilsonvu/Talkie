@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b557c651-34ba-4d45-82da-547cd0dc8068" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/components/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/initTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/initTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/queryPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/queryPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/queryUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/queryUsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/tables/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/tables/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db/tables/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/tables/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/template/base.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/template/base.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +30,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1PBjOISch7ItY3BRyaaXdcqXdx9" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="720" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -60,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="initTables.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/server/db/initTables.js" working-dir="$PROJECT_DIR$/src/server/db">
       <method v="2" />
     </configuration>
@@ -106,17 +118,17 @@
     </configuration>
     <list>
       <item itemvalue="Node.js.initTables.js" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.dev" />
       <item itemvalue="npm.nexe" />
       <item itemvalue="npm.start" />
-      <item itemvalue="npm.dev" />
-      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Node.js.initTables.js" />
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.nexe" />
       </list>
     </recent_temporary>
@@ -138,8 +150,7 @@
       <workItem from="1544483042795" duration="7247000" />
       <workItem from="1544544465274" duration="27992000" />
       <workItem from="1544641933201" duration="16316000" />
-      <workItem from="1565213603231" duration="4760000" />
-      <workItem from="1565354351073" duration="466000" />
+      <workItem from="1566496656386" duration="341000" />
     </task>
     <servers />
   </component>

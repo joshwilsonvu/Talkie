@@ -1,8 +1,10 @@
-import Sequelize from 'sequelize';
-import UserTable from './tables/user';
-import PostTable from './tables/post';
+const Sequelize = require('sequelize');
+const Promise = Sequelize.Promise;
 
-export default async () => {
+const UserTable = require('./tables/user');
+const PostTable = require('./tables/post');
+
+module.exports = async () => {
   const sequelize = new Sequelize(process.env.SQL_URI, {
     logging: false
   });

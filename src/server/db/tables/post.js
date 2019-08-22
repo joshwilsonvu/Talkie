@@ -1,6 +1,6 @@
-import Sequelize from 'sequelize';
+const Sequelize = require('sequelize');
 
-export default sequelize => {
+module.exports = sequelize => {
   const Posts = sequelize.define('post',
     {
       // The unique ID of the post
