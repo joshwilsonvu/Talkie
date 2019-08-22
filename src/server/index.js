@@ -2,6 +2,7 @@
 
 // Imports
 import envalid from 'envalid';
+
 process.env = envalid.cleanEnv(process.env, {
   PORT: envalid.port({default: 8080}),
   TITLE: envalid.str({default: "Talkie"}),

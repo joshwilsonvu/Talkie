@@ -1,4 +1,5 @@
 import Sequelize from "sequelize";
+
 const Promise = Sequelize.Promise;
 
 import UserTable from './tables/user';
