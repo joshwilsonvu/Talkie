@@ -1,4 +1,4 @@
-const Sequelize = require('sequelize');
+import Sequelize from "sequelize";
 
 const filterPost = post => ({
   id: post.id,
@@ -7,7 +7,7 @@ const filterPost = post => ({
   date: post.date
 });
 
-module.exports = {
+export default {
   filterPost: filterPost,
 
   createPost: async (Post, username, text) => {

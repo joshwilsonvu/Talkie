@@ -1,7 +1,7 @@
-const bcrypt = require('bcrypt');
-const Sequelize = require('sequelize');
+import bcrypt from 'bcrypt';
+import Sequelize from 'sequelize';
 
-module.exports = sequelize => {
+export default sequelize => {
   const User = sequelize.define('user',
     {
       username: {

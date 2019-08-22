@@ -1,6 +1,6 @@
-const Sequelize = require('sequelize');
+import Sequelize from "sequelize";
 
-module.exports = {
+export default {
   authenticateUser: async (User, username, password) => {
     username = String(username);
     password = String(password);

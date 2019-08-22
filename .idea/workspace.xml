@@ -5,14 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/components/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/components/nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/db/initTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/initTables.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/db/queryPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/queryPosts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/db/queryUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/queryUsers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/db/tables/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/tables/post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/db/tables/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db/tables/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/template/base.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/template/base.pug" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,10 +115,10 @@
     </configuration>
     <list>
       <item itemvalue="Node.js.initTables.js" />
-      <item itemvalue="npm.build" />
-      <item itemvalue="npm.dev" />
       <item itemvalue="npm.nexe" />
       <item itemvalue="npm.start" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
@@ -150,7 +147,7 @@
       <workItem from="1544483042795" duration="7247000" />
       <workItem from="1544544465274" duration="27992000" />
       <workItem from="1544641933201" duration="16316000" />
-      <workItem from="1566496656386" duration="341000" />
+      <workItem from="1566496656386" duration="1261000" />
     </task>
     <servers />
   </component>
